@@ -237,9 +237,11 @@ header {
 .img-btn-col .buttons {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
   border-radius: 8px;
-  gap: 10px;
+  gap: 25px;
 }
 .btn {
       background: linear-gradient(90deg, #007bff, darkviolet);
