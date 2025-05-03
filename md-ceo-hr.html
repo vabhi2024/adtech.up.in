@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="md-ceo-hr.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <title>adtech.up.in</title>
+ 
+</head>
+<body>
+   <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" alt="Logo"></a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <span class="close-btn" onclick="toggleSidebar()">×</span>
+     <ul>
+      <li><a href="#"><i class="fa fa-home"></i></a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Explore More</a></li>
+      <li><a href="#">Other Services</a></li>
+      
+    </ul>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+  
+    <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1587614203976-365c74645e83?auto=format&fit=crop&w=600&q=80" alt="Nature 1">
+    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=600&q=80" alt="Nature 2">
+    <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=600&q=80" alt="Nature 3">
+    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" alt="Nature 4">
+    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Nature 5">
+  </div>
+  
+  <main>
+  <button onclick="openModal('popup1')">About MD</button>
+  <button onclick="openModal('popup2')">About CEO</button>
+  <button onclick="openModal('popup3')">About HR</button>
+  </main>
+  
+  <!-- Popup 1 -->
+  <div id="popup1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('popup1')">&times;</span>
+      
+      <div class="profile">
+      <img src="dpk-logo.png" alt="Profile Picture">
+      <h2>Deepak Kumar</h2>
+      <p>Web Application Programmer</p>
+      <div class="social-icons">
+        <i class="icon"><i class="fab fa-facebook"></i></i>
+        <i class="icon"><i class="fab fa-instagram"></i></i>
+        <i class="icon"><i class="fab fa-twitter"></i></i>
+        <i class="icon"><i class="fab fa-linkedin"></i></i>
+        <i class="icon"><i class="fab fa-youtube"></i></i>
+      </div>
+    </div>
+    
+    <div class="details">
+      <div class="section">
+        <h3>Our Qualifications</h3>
+        <br>
+        <div class="skills">
+          <span><img src="https://img.icons8.com/color/512/html-5.png"></span>
+          <span><img src="https://img.icons8.com/fluent/512/css3.png"></span>
+          <span><img src="https://img.icons8.com/office40/512/react.png"></span>
+          <span><img src="https://img.icons8.com/color/512/python.png"></span>
+          <span><img src="https://img.icons8.com/color/512/javascript.png"></span> 
+          <span><img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png"></span>
+          <span><img src="https://img.icons8.com/fluent/512/node-js.png"></span>
+          <span><img src="https://img.icons8.com/?size=512&id=9nLaR5KFGjN0&format=png"></span>
+          <span><img src="https://img.icons8.com/ios_filled/512/github.png"></span>
+          <span><img src="https://img.icons8.com/fluent/512w/bootstrap.png"></span>
+            
+        </div>
+      </div>
+      <div class="section">
+       <p>Bringing designs to life with clean code and pixel-perfect precision. </p>
+      </div>     
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+  <!-- Popup 2 -->
+  <div id="popup2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('popup2')">&times;</span>
+      
+       <div class="profile">
+      <img src="abhi-logo.png" alt="Profile Picture">
+      <h2>Abhi Verma</h2>
+      <p>Web App Developer</p>
+      <div class="social-icons">
+        <i class="icon"><i class="fab fa-facebook"></i></i>
+        <i class="icon"><i class="fab fa-instagram"></i></i>
+        <i class="icon"><i class="fab fa-twitter"></i></i>
+        <i class="icon"><i class="fab fa-linkedin"></i></i>
+        <i class="icon"><i class="fab fa-youtube"></i></i>
+      </div>
+    </div>
+    
+    <div class="details">
+      <div class="section">
+        <h3>Our Qualifications</h3>
+        <br>
+        <div class="skills">
+          <span><img src="https://img.icons8.com/color/512/html-5.png"></span>
+          <span><img src="https://img.icons8.com/fluent/512/css3.png"></span>
+          <span><img src="https://img.icons8.com/office40/512/react.png"></span>
+          <span><img src="https://img.icons8.com/color/512/python.png"></span>
+          <span><img src="https://img.icons8.com/color/512/javascript.png"></span> 
+          <span><img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png"></span>
+          <span><img src="https://img.icons8.com/fluent/512/node-js.png"></span>
+          <span><img src="https://img.icons8.com/?size=512&id=9nLaR5KFGjN0&format=png"></span>
+          <span><img src="https://img.icons8.com/ios_filled/512/github.png"></span>
+          <span><img src="https://img.icons8.com/fluent/512w/bootstrap.png"></span>
+            
+        </div>
+      </div>
+      <div class="section">
+       <p>Bringing designs to life with clean code and pixel-perfect precision. </p>
+      </div>     
+        </div>
+      </div>
+    </div> 
+    </div>
+  </div>
+
+  <!-- Popup 3 -->
+  <div id="popup3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('popup3')">&times;</span>
+      
+      <div class="profile">
+      <img src="dvsh-logo.png" alt="Profile Picture">
+      <h2>Divyansh Patel</h2>
+      <p>Cyber Security Expert</p>
+      <div class="social-icons">
+        <i class="icon"><i class="fab fa-facebook"></i></i>
+        <i class="icon"><i class="fab fa-instagram"></i></i>
+        <i class="icon"><i class="fab fa-twitter"></i></i>
+        <i class="icon"><i class="fab fa-linkedin"></i></i>
+        <i class="icon"><i class="fab fa-youtube"></i></i>
+      </div>
+    </div>
+    
+    <div class="details">
+      <div class="section">
+        <h3>Our Qualifications</h3>
+        <br>
+        <div class="skills">
+          <span><img src="https://img.icons8.com/color/512/html-5.png"></span>
+          <span><img src="https://img.icons8.com/fluent/512/css3.png"></span>
+          <span><img src="https://img.icons8.com/office40/512/react.png"></span>
+          <span><img src="https://img.icons8.com/color/512/python.png"></span>
+          <span><img src="https://img.icons8.com/color/512/javascript.png"></span> 
+          <span><img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png"></span>
+          <span><img src="https://img.icons8.com/fluent/512/node-js.png"></span>
+          <span><img src="https://img.icons8.com/?size=512&id=9nLaR5KFGjN0&format=png"></span>
+          <span><img src="https://img.icons8.com/ios_filled/512/github.png"></span>
+          <span><img src="https://img.icons8.com/fluent/512w/bootstrap.png"></span>
+            
+        </div>
+      </div>
+      <div class="section">
+       <p>Bringing designs to life with clean code and pixel-perfect precision. </p>
+      </div>     
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<!-- Back Button -->
+
+<br>
+<br>
+<a href="index.html"><button class="back-btn">Go Back</button></a>
+  <footer>
+    <marquee>© 2025 - Web App Developer AD-Tech Inc.</marquee>
+  </footer>
+  
+  <script>
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      const content = modal.querySelector('.modal-content');
+      modal.classList.add('show');
+      setTimeout(() => {
+        content.classList.add('show-content');
+      }, 10);
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      const content = modal.querySelector('.modal-content');
+      content.classList.remove('show-content');
+      setTimeout(() => {
+        modal.classList.remove('show');
+      }, 300);
+    }
+  </script>
+</body>
+</html>

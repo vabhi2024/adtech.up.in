@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>adtech.up.in</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <link href="style.css" rel="stylesheet"/>
+ 
+</head>
+<body>
+  
+  <!-- HEADER & NAV -->
+  
+  <header>
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Explore</a>
+    <a href="#">Contact</a>
+    <a href="#">Others</a>
+  </nav>
+    <div class="search-icon"> 
+      <i class="fa fa-search" onclick="openPopup()"></i>
+      </div>
+    
+<div id="searchPopup">
+  <div class="popup-content">
+    <input type="text" id="searchInput" placeholder="Search with Google." oninput="getSuggestions(this.value)">
+    <button onclick="searchGoogle()">Explore⁠ ➜</button>
+    <div id="suggestions"></div>
+  </div>
+</div>
+    
+  <div class="menu-icon" onclick="openSidebar()">
+    <i class="fa fa-bars"></i>
+  </div>
+</header>
+  <!-- Sidebar for Mobile (Right Side) -->
+<div class="sidebar" id="sidebar">
+  <span class="close-btn" onclick="closeSidebar()">&times;</span>
+  <img src="admin.png" alt="admin" height="100px" width="100px" style="border-radius: 50%">
+  <h3 style="color:white">AD Tech Inc.</h3>
+  <h6 style="color:yellow">Web App Software Services</h6>
+  <br>
+  <a href="#">Home</a>
+  <a href="#">About Us</a>
+  <a href="#">Contact Us</a>
+  <a href="#">Explore More</a>
+  <a href="#">Other Services</a>
+  <br>
+ <button class="btn" style="padding:8px; width:200px;">Log In</button>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <!-- CARAUSEL SLIDER -->
+  
+  <div class="ctnr">    
+    <div class="carousel-ctnr">
+      <div class="carousel" id="carousel">
+        <img src="slider/01-min.jpg" alt="Image 5" class="clone"/>
+        <img src="slider/01-min.jpg" alt="Image 1"/>
+        <img src="slider/03-min.jpg" alt="Image 3"/>
+        <img src="slider/04-min.jpg" alt="Image 4"/>
+        <img src="slider/05-min.jpg" alt="Image 4"/>
+        <img src="slider/01-min.jpg" alt="Image 1" class="clone"/>
+      </div>
+      </div>
+     </div>
+     
+  <br>
+  <!--  MARQUEE -->
+  
+  <div class="marquee">
+  <p>This is AD-Tech Inc. Web App Software Services -:  𝙾𝚞𝚛 𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎𝚜 :- 𝙷𝚃𝙼𝙻𝟻 | 𝙲𝚂𝚂𝟹 | 𝙹𝚊𝚟𝚊𝚂𝚌𝚛𝚒𝚙𝚝 | 𝙲++ | 𝙿𝚢𝚝𝚑𝚘𝚗 |  𝚁𝚎𝚊𝚌𝚝𝙹𝚂 |  𝙽𝚘𝚍𝚎𝙹𝚂 | 𝙺𝚘𝚝𝚕𝚒𝚗</p>
+</div>
+  
+   <!-- IMG + BUTTON -->
+  
+  <div class="img-btn-col">
+    <img src="home.jpg" alt="Image">
+    <div class="buttons">
+      <a href="md-ceo-hr.html"><button class="btn">About MD</button></a>
+      <a href="md-ceo-hr.html"><button class="btn">About CEO</button></a>
+      <a href="md-ceo-hr.html"><button class="btn">About HR</button></a>      
+    </div>
+  </div>  
+
+  <!--  MAIN CARDS -->
+  
+  <div class="container">  
+  <div class="card">
+    <img src="img/1.jpg"/>
+  </div>
+  
+  <div class="card">
+    <img src="img/2.jpg"/>
+    </div>
+
+<div class="card">
+    <img src="img/3.jpg"/>
+    </div>
+    
+    <div class="card">
+    <img src="img/4.jpg"/>
+    </div>
+</div>
+  
+  <!-- JOIN COMPANY -->
+  
+  <a href="contact.html"><button class="btn" style="width:90%; margin-left:20px; margin-bottom:18px;">Fill Application Form</button></a>
+  
+  <!-- GIF IMAGE -->
+  
+  <img class="gif-img" src="img.gif">
+  
+  <!-- IMG GALLERY -->
+  
+  <div class="title" style="width:90%; margin:0 auto;">
+      <h3>Collaborated Companies</h3></div>
+<div class="card-img">  
+  <div class="img">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJf7QKOHjal6n_-NZzAmz_YEDm62VcnunFkA&s"/></div>
+   <div class="img">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk1Q2lh7aweiNuE3LObL2pp_kWhtffSJckKw&s"/></div>
+   <div class="img">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp40rLiDigZi830njeEhwSlNMsxYqpaw3ZKA&s"/></div>
+   <div class="img">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIF8ZhgZc8XRDPdwcw4uIxVZp5zRZ9urWbg&s"/></div>
+   <div class="img">  
+   <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Flipkart_logo.svg/1280px-Flipkart_logo.svg.png"/></div>
+   <div class="img">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUQ3i6AoAm5OKRnF-TAVgiZkD0HEFHpCmb4g&s"/></div>  
+ </div>
+  
+  
+   <!-- MAIN FOOTER -->
+    
+    <footer>
+  <div class="footer-container">
+    
+    <!-- Contact Form (Left Side) -->
+    <div class="footer-section">
+      <div class="title">
+      <h3>Contact Us</h3>
+      </div>
+      <form action="#" method="post">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <div style="display:flex; flex-direction:row; gap:10px;">
+        <button type="submit">Send Message</button>
+         <button type="reset">Reset Message</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Map and Social Icons (Right Side) -->
+    <div class="footer-section">
+      <div class="title">
+      <h3>Our Location</h3>
+      </div>
+   <iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14237.161345523297!2d80.946166!3d26.846695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2a0cfb6c30f%3A0x6474d8892e1c818!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1713341234567!5m2!1sen!2sin"
+  width="600"
+  height="450"
+  style="border:0; border-radius: 8px;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+      <!-- Social Icons Below Map -->
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </div>
+  </div>
+
+      <br>
+      <!-- IMP LINKS -->
+  
+      <div class="title">
+      <h3>Important Links</h3></div>
+  <div class="links">
+    <button>Link 1</button>
+    <button>Link 2</button>
+    <button>Link 3</button>
+    <button>Link 4</button>
+    <button>Link 5</button>
+    <button>Link 6</button>
+    <button>Link 7</button>
+    <button>Link 8</button>
+    <button>Link 9</button>
+  </div>  
+      
+  <!-- Copyright -->
+  <div class="copyright">
+    <marquee>&copy; 2025 - Web App Developed by AD-Tech Inc.</marquee>
+  </div>
+      <br>
+</footer>
+  
+   <!-- BOTTON IG WA TOP TO SCROLL -->
+  
+  <div class="left-footer">
+  <a href="https://www.instagram.com/adtech.up.in" target="_blank">
+    <img class="ig-wa" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/264px-Instagram_logo_2016.svg.png?20210403190622"></a>
+    
+  <a href="https://api.whatsapp.com/send?phone=+917054033320&text=*Hello!*" target="_blank">
+    <img class="ig-wa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRzCzsZtsdyJGKS7Wf4iDngmwZSsO5MeWiP-8ElgVxLOEfY8Px5ZUMDco&s=10"></a>
+    
+  <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><img class="top-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoeAGGVveI48f1VLeP4CIOzbjKfEfzFPpcyyBduKqqiyQVeSw2n9zVkMw&s=10"></div>
+</div>
+  
+  <script>
+  window.addEventListener("scroll", () => {
+    const footer = document.querySelector(".left-footer");
+    if (window.scrollY > 100) {
+      footer.classList.add("show");
+    } else {
+      footer.classList.remove("show");
+    }
+  });
+</script>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service Worker registered', reg))
+        .catch(err => console.error('Service Worker registration failed:', err));
+    }
+  </script>
+  
+  <script src="js/search.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>
