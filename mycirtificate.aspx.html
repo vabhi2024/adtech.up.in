@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="cirtificate/mycirtificate.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <title>adtech.up.in</title>
+ 
+</head>
+<body>
+   <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" alt="Logo"></a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <span class="close-btn" onclick="toggleSidebar()">×</span>
+     <ul>
+      <li><a href="#"><i class="fa fa-home"></i></a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Explore More</a></li>
+      <li><a href="#">Other Services</a></li>
+      
+    </ul>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+  
+    <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1587614203976-365c74645e83?auto=format&fit=crop&w=600&q=80" alt="Nature 1">
+    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=600&q=80" alt="Nature 2">
+    <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=600&q=80" alt="Nature 3">
+    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" alt="Nature 4">
+    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Nature 5">
+  </div>
+  
+  <div class="preloader">
+        <div class="verification-box">
+            <div class="loader"></div>
+            <p>Faching data on server...</p>
+        </div>
+    </div>
+  
+    <div class="container">
+      <br>
+        <h2 class="h2">Certificate Verification</h2>
+        <input type="text" id="certInput" placeholder="Enter Certificate No.">
+      <main>
+        <button type="reset">Cancel</button>
+        <button onclick="verifyCertificate()">Verify</button>
+      </main>
+        <p id="result"></p>
+        <a id="certificateLink" href="#" target="_blank">
+            <img id="certificate" src="" alt="Verified Certificate">
+        </a>
+      <br>
+        <button id="downloadBtn" onclick="downloadCertificate()">Download Certificate</button>
+    </div>
+
+  <script src="loader.js"></script>
+  <script src="mycirtificate.js"></script>
+
+<!-- Back Button -->
+
+<br>
+<br>
+<a href="index.html"><button class="back-btn">Go Back</button></a>
+  <footer>
+    <marquee>© 2025 - Web App Developer AD-Tech Inc.</marquee>
+  </footer>
+  
+  <script>
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      const content = modal.querySelector('.modal-content');
+      modal.classList.add('show');
+      setTimeout(() => {
+        content.classList.add('show-content');
+      }, 10);
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      const content = modal.querySelector('.modal-content');
+      content.classList.remove('show-content');
+      setTimeout(() => {
+        modal.classList.remove('show');
+      }, 300);
+    }
+  </script>
+  
+  <script src="cirtificate/mycirtificate.js"></script>
+  <script src="cirtificate/loader.js"></script>
+</body>
+</html>
