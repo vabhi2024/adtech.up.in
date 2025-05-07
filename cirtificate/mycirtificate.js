@@ -30,7 +30,7 @@
                 downloadBtn.style.display = "block";
 
                 // Certificate link
-                let certURL = `http://mycertificateskills.netlify.app/${certIDValue}`;
+                let certURL = `https://adtech2021.netlify.app/mycirtificate.aspx/${certIDValue}`;
                 certificateLink.href = certURL;
             } else {
                 result.textContent = "ⓘ Cirtificate Not Found!";
