@@ -1,6 +1,6 @@
 // Certificate ID ke corresponding images
         const certificates = {
-            "A09754": "A09754.jpg",
+            "A09754": "Images/A09754.jpg",
             "45231234": "certificate2.jpg",
             "78563412": "certificate3.jpg",
             "96385274": "certificate4.jpg",
