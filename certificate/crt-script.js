@@ -38,3 +38,13 @@ function verifyCert() {
       }, 1500); // Simulate delay
     }
 
+
+// Auto-check if ?code=XYZ exists in the URL
+    window.onload = function () {
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get("code");
+      if (code) {
+        document.getElementById('certInput').value = code;
+        verifyCert();
+      }
+    };
