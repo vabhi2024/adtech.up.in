@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+   <link rel="manifest" href="manifest.json" />
+   <link rel="stylesheet" href="certificate/crt-style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" alt="Logo"></a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <span class="close-btn" onclick="toggleSidebar()">×</span>
+     <ul>
+      <li><a href="#"><i class="fa fa-home"></i></a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Explore More</a></li>
+      <li><a href="#">Other Services</a></li>
+      
+    </ul>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+  
+  <!-- CERTIFICATE C0NTENT -->
+  
+  <div class="wrapper">
+  <div class="container">
+    <img src="https://media.tenor.com/rr-muzxX2V4AAAAj/twitter-verified-check-mark.gif" height="70px" width="70px"> 
+    <img src="certificate/v.gif" height="40px" width="280px" style="margin-bottom:10px">
+
+    <main>
+    <input type="text" id="certInput" placeholder="Enter Certificate No." required/>
+    <button onclick="verifyCert()"><i class="fa fa-search"></i></button>
+    </main>
+    
+    <div id="errorMsg" class="error hidden">Certificate not be found!</div>
+
+    <div id="loader" class="spinner hidden"></div>
+
+    <div id="certificateArea" class="certificate-box hidden">
+      <img id="certificateImage" src="" alt="Certificate Preview" />
+      <br>
+      <main class="main-button">
+      <button class="close-button" onclick="location.reload();">Close</button>
+      <a id="downloadLink" class="download-button" href="#" target="_blank" download>Download</a>
+      </main> 
+    </div>
+  </div>
+  </div>
+  <script src="certificate/crt-script.js"></script>
+  
+    <footer>
+    <marquee>© 2025 - Web App Developer AD-Tech Inc.</marquee>
+  </footer>
+  
+</body>
+</html>
