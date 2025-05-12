@@ -1,7 +1,7 @@
 const certificates = {
       "B54321XZ2": {
         jpg: "documents/123.jpg",
-        pdf: "documents/123.jpg"
+        pdf: "documents/123.pdf"
       },
       "B54321XZ1": {
         jpg: "certificates/css-advanced.jpg",
